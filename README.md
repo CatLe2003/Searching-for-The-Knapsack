@@ -1,9 +1,9 @@
-### Searching for The Knapsack
+# Searching for The Knapsack
 ## Knapsack Problem (Via GeeksforGeeks)
 - Given N items where each item has some weight and profit associated with it and also given a bag with capacity W, [i.e., the bag can hold at most W weight in it]. The task is to put the items into the bag such that the sum of profits associated with them is the maximum possible. 
 - Note: The constraint here is we can either put an item completely into the bag or cannot put it at all [It is not possible to put a part of an item into the bag].
 ## Searching Algorithms
-# Brute force 
+### Brute force 
 - Brute force is a simple technique that can be used to solve several searching problem. 
 This algorithm generates all possible solution in problem space and choose the best 
 solution. Although it can be effective for some small-size problems, using brute force 
@@ -14,7 +14,7 @@ memory usage.
 sublists of items, checking whether each sublist satisfies tthe weight and class 
 contraints or not, and choose the maximum-value sublist. Below is a step-by-step 
 process of using brute force search to solve knapsack problem: First, generate all possible sublists of items: Use binary representation to represent item. For example, if the sublist is [0,1,0,1], the chosen items are the items at index 1 and 3 then loop through all the sublists from 0 to 2n - 1, where n is the number of items. After that calculate the weight, the number of items in each class, and value for each sublist. Finally, check weight and class constraints: if the weight is less than or equal to the capacity of knapsack problem, satisfies class constraints and the value of this current sublist is greater than the current best value then updates this sublist as the best solution. Do this until there is no possible sublists and return the best solution found.
-# Branch and bound
+### Branch and bound
 - Branch and bound is an improved method from backtracking method, which works 
 better than brute force by ignoring impossible solutions. We calculate the limit (best solution) for every node and compare the limit with the current best solution before 
 discovering the node. If the best in the subtree is worse than the current best, we can 
@@ -36,7 +36,7 @@ item. The remaining weight of the bag is equal to the previous value - Added wei
 (5) If you don't choose an object, keep the previous total value and weight, the upper limit is equal to the old upper limit minus the total value + Weight * Unit price of the object.
 (6) Select the branch whose bound is the largest and go back to step 3.
 (7) Returns the maximum value and selected objects..
-# Local Beam Search
+### Local Beam Search
 - Local Beam Search is a heuristic search algorithm. It starts with a set of initial states 
 generated randomly, then it creates all the descendants from these states. After that, 
 the algorithm filters and retains suitable forms from them based on a specific metric. 
@@ -48,7 +48,7 @@ the best state whose value is the largest one.
 - At first, calculate: The weight of a state = total weights of all items in the state. The value of a state = total value of all items in the state. If weight > W – capacity (violate 
 the constraint), set value = 0.
 - After that, generate the descendants of all initial states. Calculate their weight and value and then compare them to find out the best new state of all child states. Compare best newstate with best state. Keep generating child states until reaching the best solution.
-# Genetic Algorithm
+### Genetic Algorithm
 - In genetic programming, a set of possible solutions (or initial generation) are randomly 
 generated, and then evaluated based on a set of criteria. Those solutions that best fit the criteria are then selected, and genetic mutations are applied to create new solution variants (or subsequent generations). This new generation of variants is then evaluated and the process is repeated until a satisfactory solution is found. The process is repeated until an optimal, or best “good enough”, solution is found.
 - To generate the next generation, the current generation undergoes natural selection through mini-tournaments, and the ones who are fittest reproduce to create offspring. The offspring are either copies of the parent or undergo crossover where they get a fragment from each parent, or they undergo an abrupt mutation. These steps mimic what happens in nature.
