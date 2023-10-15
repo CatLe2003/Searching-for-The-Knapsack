@@ -53,3 +53,6 @@ the constraint), set value = 0.
 generated, and then evaluated based on a set of criteria. Those solutions that best fit the criteria are then selected, and genetic mutations are applied to create new solution variants (or subsequent generations). This new generation of variants is then evaluated and the process is repeated until a satisfactory solution is found. The process is repeated until an optimal, or best “good enough”, solution is found.
 - To generate the next generation, the current generation undergoes natural selection through mini-tournaments, and the ones who are fittest reproduce to create offspring. The offspring are either copies of the parent or undergo crossover where they get a fragment from each parent, or they undergo an abrupt mutation. These steps mimic what happens in nature.
 - The advantage of using genetic programming to solve the knapsack problem is that a good enough solution can be found quickly without having to exhaustively search through all possible solutions. This makes it a much more efficient approach than traditional algorithms, and allows for a much faster solution to be found.
+### Demo 
+- Drive: https://drive.google.com/file/d/1Opl7ksHPatC_2Ef4Tcio8PK9SlzO510Q/view?usp=sharing
+- Youtube: https://youtu.be/bs_rx0HPOyU
